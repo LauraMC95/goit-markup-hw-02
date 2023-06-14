@@ -1,7 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
-@import "node_modules/modern-normalize/modern-normalize.css";
-
 * {
   margin: 0;
   padding: 0;
@@ -31,49 +27,12 @@ body {
   letter-spacing: 0.03em;
 }
 
+.list {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
-}
-
-.nav-menu .page:hover,
-.nav-menu .page:focus,
-.nav-menu .page-current,
-.contacts-menu-head .item-cel:hover,
-.contacts-menu-head .item-cel:focus,
-.contacts-menu-head .item-current,
-.contacts-menu-head .item-mail:hover,
-.contacts-menu-head .item-mail:focus,
-.contacts-menu-foo .item-add:hover,
-.contacts-menu-foo .item-add:focus,
-.contacts-menu-foo .item-mail:hover,
-.contacts-menu-foo .item-mail:focus,
-.contacts-menu-foo .item-cel:focus,
-.contacts-menu-foo .item-cel:hover,
-.contacts-menu-foo .item-cel:focus,
-.portfolio .portfolio-title:hover {
-  color: var(--accent-color);
-}
-
-.nav-menu .page,
-.contacts-menu-head .item,
-.contacts-menu-foo,
-.benefits-list .title,
-.section-do .title-do,
-.section-team .team-title,
-.section-team .name-title,
-.portfolio-title {
-  color: var(--primary-black-color);
-}
-
-.contacts-menu-head .item-cel,
-.contacts-menu-head .item-mail,
-.portfolio-text {
-  color: var(--primery-text-color);
-}
-
-.bg-hero,
-.section-footer {
-  background: var(--background-black);
 }
 
 /* Header section */
@@ -95,47 +54,65 @@ a {
 }
 
 .nav-menu {
-  color: #212121;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  list-style: none;
+}
+
+.nav-menu .page {
+  color: var(--primary-black-color);
+}
+
+.nav-menu .page:hover,
+.nav-menu .page:focus,
+.nav-menu .page-current {
+  color: var(--accent-color);
 }
 
 /*index section */
 /* main/hero section */
 
-.button-primary {
-  font-size: 16px;
-  background-color: var(--accent-color);
-  color: var(--primary-white-color);
-  text-transform: capitalize;
+.bg-hero {
+  background: var(--background-black);
 }
 
 .bg-hero .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.5;
+  letter-spacing: 0.06em;
   color: var(--primary-white-color);
 }
 
 .bg-hero .button-primary {
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  text-transform: capitalize;
 }
 
 .benefits-list .title {
-  font-family: "Roboto";
   font-weight: 700;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.benefits-list .title {
+  color: var(--primary-black-color);
+}
+
+.benefits-list .description {
+  line-height: 1.7;
+}
+
+.section-do .title-do {
+  color: var(--primary-black-color);
 }
 
 .section-do .title-do,
 .section-team .team-title {
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -153,30 +130,43 @@ a {
   background: var(--background-gray);
 }
 
-/* footer section */
-
-.contacts-menu-foo .item-add {
-  color: var(--primary-white-color);
+.section-team .team-title,
+.section-team .name-title {
+  color: var(--primary-black-color);
 }
 
-.contacts-menu-foo .item-mail,
-.contacts-menu-foo .item-cel {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.contacts-menu-foo {
-  font-style: normal;
+.section-team .description-team {
+  font-size: 16px;
+  line-height: 1.8;
 }
 
 /* portfolio section */
 /* main/hero section */
 
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.portfolio-title {
+  color: var(--primary-black-color);
+}
+
+.portfolio .portfolio-title:hover {
+  color: var(--accent-color);
+}
+
 .list-button .button,
 .list-button .button-current {
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   border-radius: 4px;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .button-current {
@@ -189,13 +179,53 @@ a {
   background: var(--accent-color);
 }
 
-.portfolio-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-}
-
 .portfolio-text {
   font-size: 16px;
   line-height: 1.8;
+}
+
+.portfolio-text {
+  color: var(--primery-text-color);
+}
+
+/* footer section index-portfolio*/
+
+.section-footer {
+  background: var(--background-black);
+}
+
+.contacts-menu-foo {
+  font-style: normal;
+}
+
+.contacts-menu-head .item,
+.contacts-menu-foo {
+  color: var(--primary-black-color);
+}
+
+.contacts-menu-head .item-cel,
+.contacts-menu-head .item-mail {
+  color: var(--primery-text-color);
+}
+
+.contacts-menu-head .item-cel:hover,
+.contacts-menu-head .item-cel:focus,
+.contacts-menu-head .item-mail:hover,
+.contacts-menu-head .item-mail:focus,
+.contacts-menu-foo .item-add:hover,
+.contacts-menu-foo .item-add:focus,
+.contacts-menu-foo .item-mail:hover,
+.contacts-menu-foo .item-mail:focus,
+.contacts-menu-foo .item-cel:focus,
+.contacts-menu-foo .item-cel:hover {
+  color: var(--accent-color);
+}
+
+.contacts-menu-foo .item-add {
+  color: var(--primary-white-color);
+}
+
+.contacts-menu-foo .item-mail,
+.contacts-menu-foo .item-cel {
+  color: rgba(255, 255, 255, 0.6);
 }

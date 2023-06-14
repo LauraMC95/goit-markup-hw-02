@@ -4,7 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="./css/styless.css" />
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
 
     <title>WebStudio</title>
   </head>
@@ -14,17 +23,19 @@
     <header class="page-header">
       <nav>
         <!-- Logo -->
-        <a class="logo" href="./index.html">Web<span style="color: black;">Studio</span></a>
+        <a class="logo" href="./index.html"
+          >Web<span style="color: black">Studio</span></a
+        >
         <!-- Navegación a otros sitios (menú) -->
-        <ul class="nav-menu">
+        <ul class="nav-menu" class="list">
           <li><a class="page-current" href="./index.html">Estudio</a></li>
           <li><a class="page" href="./portfolio.html">Portafolio</a></li>
           <li><a class="page" href="#">Contactos</a></li>
         </ul>
       </nav>
       <!-- Contacto -->
-      <ul class="contacts-menu-head">
-        <li><a class="item-current" href="">info@devstudio.com</a></li>
+      <ul class="contacts-menu-head" class="list">
+        <li><a class="item-mail" href="">info@devstudio.com</a></li>
         <li><a class="item-cel" href="">+52 55 5529 6000</a></li>
       </ul>
     </header>
@@ -33,11 +44,13 @@
       <!-- Sección hero-->
       <section class="bg-hero">
         <h1 class="hero-title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-        <button class="button-primary" type="button">Solicite nuestro servicio</button>
+        <button class="button-primary" type="button">
+          Solicite nuestro servicio
+        </button>
       </section>
       <!-- Sección de beneficios -->
       <section class="section">
-        <ul class="benefits-list">
+        <ul class="benefits-list" class="list">
           <li>
             <h3 class="title">ATENCIÓN A LOS DETALLES</h3>
             <p class="description">
@@ -72,7 +85,7 @@
       <!-- Sección "Qué hacemos" -->
       <section class="section-do">
         <h2 class="title-do">A qué nos dedicamos</h2>
-        <ul>
+        <ul class="list">
           <li>
             <img src="images/coding1.jpg" alt="codificación" width="373" />
           </li>
@@ -83,48 +96,56 @@
       <!-- Sección "Nuestro equipo" -->
       <section class="section-team">
         <h2 class="team-title">Nuestro Equipo</h2>
-        <ul>
+        <ul class="list">
           <li>
             <img src="images/team1.jpg" alt="first member" width="270" />
             <h3 class="name-title">Andrés Cubo</h3>
-            <p>Diseñador de Productos</p>
+            <p class="description-team">Diseñador de Productos</p>
           </li>
 
           <li>
             <img src="images/team2.jpg" alt="second member" width="270" />
             <h3 class="name-title">Carla Palacios</h3>
-            <p>Desarrolladora Frontend</p>
+            <p class="description-team">Desarrolladora Frontend</p>
           </li>
 
           <li>
             <img src="images/team3.jpg" alt="third member" width="270" />
             <h3 class="name-title">Mario Dorado</h3>
-            <p>Marketing</p>
+            <p class="description-team">Marketing</p>
           </li>
 
           <li>
             <img src="images/team4.jpg" alt="fourth member" width="270" />
             <h3 class="name-title">Pablo Mijangos</h3>
-            <p>Diseñador IU</p>
+            <p class="description-team">Diseñador IU</p>
           </li>
         </ul>
       </section>
     </main>
     <!-- Final -->
     <footer class="section-footer">
-      <a class="logo" href="./index.html">Web<span style="color: white;">Studio</span></a>
+      <a class="logo" href="./index.html"
+        >Web<span style="color: white">Studio</span></a
+      >
 
       <address class="contacts-menu-foo">
-        <ul>
+        <ul class="list">
           <li>
-            <a class="item-add" href="" target="_blank" rel="noopener noreferrer">
+            <a
+              class="item-add"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Ticomán 500, Ciudadd de <br />
               México, CDMX, México
             </a>
           </li>
 
           <li>
-            <a class="item-mail"
+            <a
+              class="item-mail"
               href="mailto:info@example.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -133,7 +154,11 @@
             </a>
           </li>
           <li>
-            <a class="item-cel" href="" target="_blank" rel="noreferrer noopener"
+            <a
+              class="item-cel"
+              href=""
+              target="_blank"
+              rel="noreferrer noopener"
               >+52 55 5529 6000
             </a>
           </li>

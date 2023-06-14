@@ -4,10 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="./css/styless.css" />
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      href="node_modules/modern-normalize/modern-normalize.css"
     />
     <title>WebStudio</title>
   </head>
@@ -17,11 +22,15 @@
     <header class="page-header">
       <nav>
         <!-- Logo -->
-        <a class="logo" href="./index.html">Web<span style="color: black;">Studio</span></a>
+        <a class="logo" href="./index.html"
+          >Web<span style="color: black">Studio</span></a
+        >
         <!-- Navegación a otros sitios (menú) -->
-        <ul class="nav-menu">
+        <ul class="nav-menu" class="list">
           <li><a class="page" href="./index.html">Estudio</a></li>
-          <li><a class="page-current" href="./portfolio.html">Portafolio</a></li>
+          <li>
+            <a class="page-current" href="./portfolio.html">Portafolio</a>
+          </li>
           <li><a class="page" href="#">Contactos</a></li>
         </ul>
       </nav>
@@ -35,7 +44,7 @@
     <main>
       <!-- Sección hero-->
       <section class="section-portfolio">
-        <ul class="list-button">
+        <ul class="list-button" class="list">
           <li><button class="button-current" type="button">Todo</button></li>
           <li><button class="button" type="button">Sitios-web</button></li>
           <li><button class="button" type="button">Aplicaciones</button></li>
@@ -44,87 +53,98 @@
         </ul>
       </section>
       <!-- Sección de "Todo" -->
-      <ul class="portfolio">
+      <ul class="portfolio" class="list">
         <li>
-          <a href="#" class="link">
-          <img src=./images/tecnology1.jpg alt="Sitio Web" width="370"/>
-          <h3 class="portfolio-title">Tecnoduck</h3>
-          <p class="portfolio-text">Sitio-web</p>
-        </a>
+          <a class="link" href="#">
+            <img src=./images/tecnology1.jpg alt="Sitio Web" width="370"/>
+            <h3 class="portfolio-title">Tecnoduck</h3>
+            <p class="portfolio-text">Sitio-web</p>
+          </a>
         </li>
         <li>
-          <a href="#" class="link">
-          <img src="images/desing2.jpg" alt="Diseño" width="370" />
-          <h3 class="portfolio-title">Póst Nueva Orleans Vs Estrellas Doradas</h3>
-          <p class="portfolio-text">Diseño</p>
+          <a class="link" href="#">
+            <img src="images/desing2.jpg" alt="Diseño" width="370" />
+            <h3 class="portfolio-title">
+              Póst Nueva Orleans Vs Estrellas Doradas
+            </h3>
+            <p class="portfolio-text">Diseño</p>
+          </a>
+        </li>
+        <li>
+          <a class="link" href="#">
+            <img src="./images/rest3.jpg" alt="Apps" width="370" />
+            <h3 class="portfolio-title">Restaurante Seafood</h3>
+            <p class="portfolio-text">Aplicaciones</p>
+          </a>
+        </li>
+        <li>
+          <a class="link" href="#">
+            <img src="./images/proyectprime4.jpg" alt="Marketing" width="370" />
+            <h3 class="portfolio-title">Pyoyecto Prime</h3>
+            <p class="portfolio-text">Marketing</p>
           </a>
         </li>
         <li>
           <a href="#" class="link">
-          <img src="./images/rest3.jpg" alt="Apps" width="370" />
-          <h3 class="portfolio-title">Restaurante Seafood</h3>
-          <p class="portfolio-text">Aplicaciones</p>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="link">
-          <img src="./images/proyectprime4.jpg" alt="Marketing" width="370" />
-          <h3 class="portfolio-title">Pyoyecto Prime</h3>
-          <p class="portfolio-text">Marketing</p>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="link">
-          <img src="./images/box5.jpg" alt="Apps" width="370" />
-          <h3 class="portfolio-title">Proyecto cajas</h3>
-          <p class="portfolio-text">Aplicaciones</p>
+            <img src="./images/box5.jpg" alt="Apps" width="370" />
+            <h3 class="portfolio-title">Proyecto cajas</h3>
+            <p class="portfolio-text">Aplicaciones</p>
           </a>
         </li>
 
         <li>
-          <a href="#" class="link">
-          <img src="images/inspiration6.jpg" alt="Sitio Web" width="370" />
-          <h3 class="portfolio-title">La inspiración no tiene límites</h3>
-          <p class="portfolio-text">Sitio-web</p>
-        </li>
-        <li>
-          <a href="#" class="link">
-          <img src="./images/limitedition7.jpg" alt="Sitio Web" width="370" />
-          <h3 class="portfolio-title">Edición Limitada</h3>
-          <p class="portfolio-text">Diseño</p>
+          <a class="link" href="#">
+            <img src="images/inspiration6.jpg" alt="Sitio Web" width="370" />
+            <h3 class="portfolio-title">La inspiración no tiene límites</h3>
+            <p class="portfolio-text">Sitio-web</p>
           </a>
         </li>
         <li>
-          <a href="#" class="link">
-          <img src="./images/lab8.jpg" alt="Sitio Web" width="370" />
-          <h3 class="portfolio-title">Proyecto LAB</h3>
-          <p class="portfolio-text">Marketing</p>
+          <a class="link" href="#">
+            <img src="./images/limitedition7.jpg" alt="Sitio Web" width="370" />
+            <h3 class="portfolio-title">Edición Limitada</h3>
+            <p class="portfolio-text">Diseño</p>
           </a>
         </li>
         <li>
-          <a href="#" class="link">
-          <img src="./images/business9.jpg" alt="Sitio Web" width="370" />
-          <h3 class="portfolio-title">Negocio en Crecimiento</h3>
-          <p class="portfolio-text">Aplicaciones</p>
+          <a class="link" href="#">
+            <img src="./images/lab8.jpg" alt="Sitio Web" width="370" />
+            <h3 class="portfolio-title">Proyecto LAB</h3>
+            <p class="portfolio-text">Marketing</p>
+          </a>
+        </li>
+        <li>
+          <a class="link" href="#">
+            <img src="./images/business9.jpg" alt="Sitio Web" width="370" />
+            <h3 class="portfolio-title">Negocio en Crecimiento</h3>
+            <p class="portfolio-text">Aplicaciones</p>
           </a>
         </li>
       </ul>
     </main>
     <!-- Final -->
     <footer class="section-footer">
-      <a class="logo" href="./index.html">Web<span style="color: white;">Studio</span></a>
+      <a class="logo" href="./index.html"
+        >Web<span style="color: white">Studio</span></a
+      >
 
       <address class="contacts-menu-foo">
-        <ul>
+        <ul class="list">
           <li>
-            <a class="item-add" href="" target="_blank" rel="noopener noreferrer">
+            <a
+              class="item-add"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Ticomán 500, Ciudadd de <br />
               México, CDMX, México
             </a>
           </li>
 
           <li>
-            <a class="item-mail"
+            <a
+              class="item-mail"
               href="mailto:info@example.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -133,7 +153,11 @@
             </a>
           </li>
           <li>
-            <a class="item-cel" href="" target="_blank" rel="noreferrer noopener"
+            <a
+              class="item-cel"
+              href=""
+              target="_blank"
+              rel="noreferrer noopener"
               >+52 55 5529 6000
             </a>
           </li>
